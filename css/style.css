@@ -1,0 +1,1343 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	min-width: 320px;
+	font-weight: 400;
+
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+p{
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'GT-Eesti-light';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti-regular';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti-semi';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti-bold';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+ 	font-style: normal
+}
+a{
+	display: block;
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+section#home{
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	padding-top: 15px;
+}
+section#home header{
+	width: 100%;
+	background-color: #fff;
+}
+section#home header div.wrapper{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+
+}
+section#home header div.wrapper ul.right{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 240px;
+	font-size: 14px;
+	font-family: 'GT-Eesti-bold';
+	letter-spacing: .5pxs
+}
+section#home header div.wrapper ul.left{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 400px;
+	font-size: 14px;
+	letter-spacing: .5px;
+	font-family: 'GT-Eesti-bold';
+}
+section#home header div.wrapper ul.right li a.button{
+	padding: 10px 16px;
+	border: 1px solid #23D3D3;
+	border-radius: 35px;
+	background-color: #23D3D3;
+	color: white;
+	text-align: center;
+}
+section#home header div.wrapper ul.left li a img{
+	width: 100%;
+}
+section#home header div.wrapper ul.left li:first-child{
+	width: 20%;
+}
+section#spotlight{
+	background: url(../images/bg.jpg);
+	background-size: 90%;
+	background-position: 366px -36px;
+	padding-top: 70px;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 120px;
+
+
+}
+section#spotlight div.wrapper{
+	display: flex;
+	align-items: center;
+
+	width: 80%;
+
+}
+section#spotlight div.wrapper div.container{
+	width: 40%;
+}
+section#spotlight div.wrapper div.container h1{
+	font-size: 53px;
+	font-family: 'GT-Eesti-bold';
+	margin-bottom: 20px;
+}
+section#spotlight div.wrapper div.container p{
+	font-family: 'GT-Eesti-light';
+	color: #1C2C40;
+	font-size: 17px;
+	margin-bottom: 50px;
+}
+section#spotlight div.wrapper div.container a.button{
+	padding: 16px 26px;
+	margin-bottom: 20px;
+	border: 1px solid #23D3D3;
+	border-radius: 35px;
+	background-color: #23D3D3;
+	color: white;
+	font-family: 'GT-Eesti-regular';
+	display: inline;
+}
+section#spotlight div.wrapper div.container div.experia{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+section#spotlight div.wrapper div.container div.experia span{
+	font-family: 'GT-Eesti-light';
+	color: #1C2C40;
+}
+section#spotlight div.wrapper div.container div.experia img{
+	margin-left: 10px;
+}
+section#services{
+	background: url(../images/whatis-bg.jpg);
+	background-size: 75%;
+	background-position: 615px 468px;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+section#services div.wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+section#services div#service-top{
+	text-align: center;
+}
+section#services div.wrapper span.arrow{
+	display: inline-block;
+	margin: 0 auto;
+	width: 40px;
+	text-align: center;
+	margin-top: 105px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+}
+section#services div.wrapper span.arrow img{
+	width: 100%;
+	display: block;
+}
+section#services div.wrapper div#service-top h6{
+	font-size: 17px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+section#services div.wrapper h3{
+	font-size: 53px;
+	font-weight: 700;
+	font-family: 'GT-Eesti-bold';
+
+}
+section#services div.wrapper div.container{
+	width: 40%;
+	margin-top: 100px;
+}
+section#services div.wrapper div.container ul{
+
+}
+section#services div.wrapper div.container ul li{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+section#services div.wrapper div.container ul li span{
+	font-size: 19px;
+	padding: 6px 10px 3px;
+	background-color: #23D3D3;
+	color: white;
+	border-radius: 4px;
+	margin-right: 15px;
+	font-family: 'GT-Eesti-regular';
+}
+section#services div.wrapper div.container ul li h6{
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'GT-Eesti-bold';
+}
+section#services div.wrapper div.container ul li p{
+	margin-top: 30px;
+	font-family: 'GT-Eesti-light';
+	font-size: 18px;
+	color: #444;
+	line-height: 1.7em;
+}
+section#services div.wrapper div.container ul li a.button{
+	font-family: 'GT-Eesti-bold';
+	font-size: 13px;
+	padding: 10px 17px;
+	border-radius: 35px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	border: 1px solid black;
+}
+section#middle{
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+section#middle div.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+section#middle div.wrapper hr.line:first-child{
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 120px;
+}
+section#middle div.wrapper ul{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+section#middle div.wrapper ul li{
+	width: 100px;
+}
+section#middle div.wrapper ul li:nth-child(odd){
+	margin-top: 100px;
+}
+section#middle div.wrapper ul li a img{
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+}
+section#middle div.wrapper h4{
+	margin: 0 auto;
+	font-family: 'GT-Eesti-bold';
+	font-size: 53px;
+	text-align: center;
+	max-width: 700px;
+	margin-top: 120px;
+}
+section#middle div.wrapper p{
+	margin: 0 auto;
+	font-family: 'GT-Eesti-light';
+	font-size: 20px;
+	text-align: center;
+	max-width: 500px;
+	margin-top: 50px;
+	line-height: 1.7em;
+	color: #5a6679;
+	margin-bottom: 100px;
+}
+section#middle div.wrapper hr.line:last-child{
+	border-bottom: 1px solid lightgray;
+	width: 65%;
+	margin: 0 auto;
+}
+section#testimonial{
+	background: #fff;
+	position: relative;
+	z-index: 1;
+}
+section#testimonial div.wrapper{
+	width: 90%;
+	margin: 0 auto;
+
+}
+section#testimonial div.wrapper hr.line:first-child{
+	color: lightgray;
+	width: 65%;
+	margin: 0 auto;
+}
+section#testimonial div.wrapper hr.line:last-child{
+	border-bottom: 1px solid lightgray;
+	color: lightgray;
+	width: 85%;
+	margin: 0 auto;
+}
+section#testimonial div.wrapper div.container{
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 100px ;
+}
+section#testimonial div.wrapper div.container p{
+	font-family: 'GT-Eesti-bold';
+	font-size: 30px;
+}
+section#testimonial div.wrapper div.container img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 60px 0 40px;
+}
+section#testimonial div.wrapper div.container h6{
+	font-size: 19px;
+	font-family: 'GT-Eesti-regular';
+	margin-bottom: 5px;
+}
+section#testimonial div.wrapper div.container span{
+	font-size: 15px;
+	color: #8492a6;
+	font-family: 'GT-Eesti-regular';
+}
+section#user-count{
+	padding-top: 120px;
+	text-align: center;
+	padding-bottom: 100px;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+section#user-count div.wrapper{
+
+}
+section#user-count div.wrapper div.container{
+	text-align: center;
+
+}
+section#user-count div.wrapper div.container img{
+	max-width: 360px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+section#user-count div.wrapper div.container p{
+	font-family: 'GT-Eesti-light';
+	color: #5a6679;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	font-size: 17px;
+}
+section#user-count div.wrapper div.container a.button{
+	display: inline-block;
+	padding: 18px 0;
+	width: 160px;
+	background-color: var(--main-bg-color);
+	border-radius: 8px;
+	color: #fff;
+	font-family: 'GT-Eesti-bold';
+}
+section#faq{
+	background-color: #ecfaff;
+	padding-top: 120px;
+	position: relative;
+	z-index: 1;
+}
+section#faq div.wrapper{
+
+}
+section#faq div.wrapper div.top{
+
+}
+section#faq div.wrapper div.top h4{
+	max-width: 300px;
+	font-size: 28px;
+	font-family: 'GT-Eesti-bold';
+	margin-bottom: 40px;
+}
+section#faq div.wrapper div.top ul{
+	display: flex;
+
+}
+section#faq div.wrapper div.top ul li{
+	width: 33.33%;
+
+}
+section#faq div.wrapper div.top ul li a{
+	color: #8492a6;
+	padding: 20px 60px 20px 40px;
+	font-family: 'GT-Eesti-regular';
+	font-weight: 600;
+	display: inline-block;
+	border-bottom: 1px solid rgba(28,44,64,.1);
+	width: 100%;
+}
+section#faq div.wrapper div.top ul li:first-child a,section#faq div.wrapper div.top ul li:hover a{
+	color:	#23D3D3;
+	border-bottom: 1px solid #23D3D3;
+}
+section#faq div.wrapper div.container{
+	margin-top: 20px;
+}
+section#faq div.wrapper div.container ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+section#faq div.wrapper div.container ul li{
+	width: 32%;
+	padding: 60px 30px 30px;
+	border-bottom: 1px solid rgba(28,44,64,.1);
+	display: inline-block;
+}
+section#faq div.wrapper div.container ul li h6{
+	font-size: 20px;
+	margin-bottom: 24px;
+	font-family: 'GT-Eesti-regular';
+	font-weight: 600;
+}
+section#faq div.wrapper div.container ul li p{
+	font-family: 'GT-Eesti-light';
+	font-size: 18px;
+	color: #5a6679;
+	line-height: 1.5em;
+}
+section#faq div.wrapper div.bottom{
+	padding-top: 40px;
+	display: flex;
+	border-bottom: 1px solid rgba(28,44,64,.1);
+}
+section#faq div.wrapper div.bottom div.image-container{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+section#faq div.wrapper div.bottom div.image-container img{
+	width: 55%;
+}
+section#faq div.wrapper div.bottom div.content{
+	width: 67%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+section#faq div.wrapper div.bottom div.content div.item{
+
+}
+section#faq div.wrapper div.bottom div.content div.item img{
+	display: block;
+	margin-bottom: 20px;
+}
+section#faq div.wrapper div.bottom div.content div.item p{
+	font-family: 'GT-Eesti-light';
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+section#faq div.wrapper div.bottom div.content div.item a{
+	font-size: 17px;
+	font-family: 'GT-Eesti-light';
+	text-decoration: dashed;
+	color: var(--main-bg-color);
+}
+section#press{
+	background-color: #ecf9ff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	position: relative;
+	z-index: 1;
+}
+section#press div.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+section#press div.wrapper div.left{
+	margin-right: 50px;
+	margin-left: 100px;
+}
+section#press div.wrapper div.left h4{
+	width: 67%;
+	font-size: 28px;
+	font-family: 'GT-Eesti-bold';
+	white-space: nowrap;
+	
+}
+section#press div.wrapper div.right{
+
+}
+section#press div.wrapper div.right ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+section#press div.wrapper div.right ul li{
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 20px;
+}
+section#press div.wrapper div.right ul li img{
+	width: 100px;
+	border-radius: 50%;
+	margin-right: 20px;
+	box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.3);
+
+}
+section#press div.wrapper div.right ul li span{
+	font-family: 'GT-Eesti-light';
+	font-size: 16px;
+}
+section#promo{
+	background-color: var(--main-bg-color);
+	padding: 120px 0;
+	position: relative;
+	z-index: 1;
+}
+section#promo div.wrapper{
+
+}
+section#promo div.wrapper div.top{
+
+}
+section#promo div.wrapper div.top h4{
+	font-size: 40px;
+	font-family: 'GT-Eesti-bold';
+	max-width: 300px;
+	margin: 0 auto 40px;
+	text-align: center;
+}
+section#promo div.wrapper div.top a.button{
+	width: 160px;
+	font-size: 16px;
+	border-radius: 8px;
+	padding: 18px 0;
+	background-color: #fff;
+	text-align: center;
+	color: var(--main-bg-color);
+	margin: 0 auto;
+	font-family: 'GT-Eesti-bold';
+}
+section#promo div.wrapper div.bottom{
+	margin-top: 150px;
+}
+section#promo div.wrapper div.bottom ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+section#promo div.wrapper div.bottom ul li{
+	width: 22%;
+	display: flex;
+	align-items: flex-start;
+}
+section#promo div.wrapper div.bottom ul li img{
+	width: 18px;
+	height: 18px;
+	margin-top: 3px;
+	display: inline-block;
+}
+section#promo div.wrapper div.bottom ul li span{
+	color: #5a6679;
+	padding: 0 30px 0 15px;
+	max-width: 240px;
+	font-family: 'GT-Eesti-regular';
+	line-height: 1.7em;
+	font-size: 16px;
+	display: block;
+}
+section#footer{
+	padding-top: 120px;
+	padding-bottom: 60px;
+	background: #252e43;
+	position: relative;
+	z-index: 1;
+}
+section#footer div.wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+section#footer div.wrapper div.top{
+	width: 100%;
+}
+section#footer div.wrapper div.top>ul{
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+
+}
+section#footer div.wrapper div.top>ul li{
+	width: 20%;
+}
+section#footer div.wrapper div.top>ul>li:first-child{
+	width: 32%;
+}
+section#footer div.wrapper div.top>ul>li:last-child{
+	width: 28%;
+}
+section#footer div.wrapper div.top>ul li img{
+	margin-bottom: 40px;
+	max-width:105px;
+
+}
+section#footer div.wrapper div.top>ul li p{
+	font-family: 'GT-Eesti-regular';
+	color: #c0ccda;
+	padding-top: 6px;
+} 
+section#footer div.wrapper div.top>ul li h4{
+	font-size: 24px;
+	font-family: 'GT-Eesti-regular';
+	margin-bottom: 20px;
+}
+section#footer div.wrapper div.top>ul li ul li{
+	font-family: 'GT-Eesti-regular';
+	color: #c0ccda;
+	white-space: nowrap;
+	font-size: 16px;
+	padding: 6px 0;
+	 
+}
+section#footer div.wrapper div.top>ul li form{
+	position: relative;
+}
+section#footer div.wrapper div.top>ul li form input{
+	padding-left: 15px;
+	padding-right: 45px;
+	height: 50px;
+	font-size: 16px;
+	background: #3c4858;
+	border-radius: 8px;
+	margin-top: 30px;
+	display: inline-block;
+	width: 100%;
+	font-size: 15px;
+	font-family: 'GT-Eesti-regular';
+
+}
+section#footer div.wrapper div.top>ul li form img{
+	display:inline-block;
+	width: 18px;
+	position: absolute;
+	top: 45px;
+	right: 15px;
+	transform: rotate(-90deg);
+}
+section#footer div.wrapper div.bottom{
+	width: 100%;
+	margin-top: 140px;
+}
+section#footer div.wrapper div.bottom ul{
+	display: flex;
+	justify-content: space-between;
+}
+section#footer div.wrapper div.bottom ul li img{
+	width: 18px;
+	display: inline-block;
+	margin-right: 10px;
+}
+section#footer div.wrapper div.bottom ul li span{
+	color: #8492a6;
+	font-size: 14px;
+	display: inline;
+	font-family: 'GT-Eesti-light';
+}
+section#footer div.wrapper div.bottom ul li span a{
+	color: #23D3D3;
+	display: inline;
+	cursor: pointer;
+}
+section#download{
+	background: url(../images/mobile-devices-bg-2.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 120vh;
+	background-position: -100px 0;
+	padding-top: 120px;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100vw;
+}
+section#download div.wrapper{
+	display: flex;
+	justify-content: flex-end;
+}
+section#download div.wrapper div.container{
+	width: 60%;
+}
+section#download div.wrapper div.container h2{
+	max-width: 360px;
+	font-family: 'GT-Eesti-bold';
+	font-size: 53px;
+	line-height: 1.4em;
+}
+section#download div.wrapper div.container p{
+	margin-top: 40px;
+	max-width: 420px;
+	font-family: 'GT-Eesti-regular';
+	color: #8492a6;
+	line-height: 1.5em;
+}
+section#download div.wrapper div.container a.button{
+	display: block;
+	max-width: 150px;
+	padding: 10px 0px;
+	background-color: #252e43;
+	color: white;
+	font-family: 'GT-Eesti-bold';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	border-radius: 8px;
+	font-size: 16px;
+}
+section#download div.wrapper div.container a.button img{
+	width: 30px;
+	display: inline-block;
+	margin-right: 10px;
+}
+section#mask{
+	height: 120vh;
+	background: white;
+	position: relative;
+	z-index: -2;
+}
+
+@media all and (max-width:980px){
+	section#home header div.wrapper ul.right {
+		display: none;
+	}
+	section#home header div.wrapper ul.left li:nth-child(2){
+		display: none;
+	}
+	section#home header div.wrapper ul.left li:nth-child(3){
+		display: none;
+	}
+	section#home header div.wrapper ul.left li:nth-child(4){
+		display: none;
+	}
+	section#home header div.wrapper ul.left li a img {
+		width: 100px;
+
+	}
+	section#home header div.wrapper ul.left li:nth-child(1){
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	section#home header div.wrapper ul.left{
+		width: 100%;
+	}
+	section#spotlight{
+		background: #fff;
+	}
+	section#spotlight div.wrapper div.container{
+		margin-top: 80px;
+		width: 100%;
+		text-align: center;
+	}
+	section#spotlight div.wrapper div.container div.experia {
+		text-align: center;
+		width: 100%;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	section#services{
+		background-color: #fff;
+		background-image: none;
+	}
+	section#services div.wrapper div.container{
+		width: 100%;
+		text-align: center;
+	}
+	section#services div.wrapper div.container ul li{
+		justify-content: center;
+	}
+	section#faq div.wrapper div.container ul li {
+		padding: 60px 10px 10px;
+	}
+	section#press div.wrapper div.right ul li {
+		width: 50%;
+	}
+	section#press div.wrapper div.right ul li span{
+		display: none;
+	}
+	section#promo div.wrapper div.bottom ul li {
+		width: 50%;
+		justify-content: center;
+		margin: 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	section#promo div.wrapper div.bottom ul{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	section#footer div.wrapper div.top>ul>li:first-child {
+		width: 50%;
+		margin-left: 75px;
+	}
+	section#footer div.wrapper div.top>ul{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	section#footer div.wrapper div.top>ul>li{
+		margin-bottom: 75px;
+	}
+	section#footer div.wrapper div.bottom {
+		margin-top: 80px;
+	}
+}
+@media all and (max-width:768px){
+	section#spotlight div.wrapper div.container{
+		margin-top: 40px;
+	}
+	section#services div.wrapper div#service-top h6{
+		font-size: 14px;
+	}
+	section#services div.wrapper span.arrow{
+		width: 30px;
+	}
+	section#services div.wrapper h3 {
+		font-size: 40px;
+	}
+	section#spotlight div.wrapper div.container h1{
+		font-size: 40px;
+	}
+	section#home header div.wrapper ul.left li a img {
+		width: 70px;
+	}
+	section#spotlight div.wrapper div.container p {
+		font-size: 14px;
+	}
+	section#spotlight div.wrapper div.container a.button {
+		font-size: 14px;
+		padding: 13px 20px;
+	}
+	section#spotlight div.wrapper div.container div.experia span {
+		font-size: 14px;
+	}
+	section#spotlight div.wrapper div.container div.experia img {
+		width: 90px;
+	}
+	
+	section#services div.wrapper div.container ul li span {
+		font-size: 15px;
+	}
+	
+	section#services div.wrapper div.container ul li h6{
+		font-size: 19px;
+	}
+	section#services div.wrapper div.container ul li p{
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	section#services div.wrapper div.container ul li a.button{
+		font-size: 9px;
+		margin-top: 10px;
+		margin-bottom: 50px;
+	}
+	section#services div.wrapper div.container{
+		margin-top: 70px;
+	}
+	section#middle div.wrapper ul li{
+		width: 80px;
+	}
+	section#middle div.wrapper h4{
+		font-size: 40px;
+	}
+	section#middle div.wrapper p{
+		font-size: 15px;
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+	section#testimonial div.wrapper div.container p{
+		font-size: 22px;
+	}
+	section#testimonial div.wrapper div.container img {
+		width: 60px;
+		height: 60px;
+		margin: 40px 0 20px;
+	}
+	section#testimonial div.wrapper div.container h6{
+		font-size: 15px;
+	}
+	section#testimonial div.wrapper div.container span{
+		font-size: 13px;
+	}
+	section#user-count div.wrapper div.container a.button{
+		width: 130px;
+		font-size: 14px;
+	}
+	section#user-count div.wrapper div.container p{
+		font-size: 14px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	section#faq div.wrapper div.top h4 {
+		font-size: 24px;
+		max-width: 260px;
+	}
+	section#faq div.wrapper div.top ul li a{
+		font-size: 15px;
+		text-align: center;
+		padding: 5px 46px 13px 26px;
+	}
+	section#faq div.wrapper div.container ul li{
+		width: 45%;
+		padding: 30px 10px 10px;
+	}
+	section#faq div.wrapper div.container ul li h6{
+		font-size: 17px;
+	}
+	section#faq div.wrapper div.container ul li p{
+		font-size: 15px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item img{
+		width: 30px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item a {
+		font-size: 14px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item p{
+		font-size: 14px;
+	}
+	section#press div.wrapper div.left {
+		margin-left: 50px;
+	}
+	section#promo div.wrapper div.top h4{
+		font-size: 34px;
+	}
+	section#promo div.wrapper div.top a.button{
+		font-size: 14px;
+		width: 110px;
+		padding: 11px 0;
+	}
+	section#promo div.wrapper div.bottom{
+		margin-top: 80px;
+	}
+	section#promo div.wrapper div.bottom ul li span {
+		font-size: 14px;
+	}
+	section#promo div.wrapper div.bottom ul li img{
+		width: 14px;
+		height: 14px;
+	}
+	section#press div.wrapper div.left h4{
+		font-size: 24px;
+	}
+	section#press div.wrapper div.right ul li img{
+		width: 80px;
+	}
+	section#press div.wrapper div.right ul li{
+		padding: 20px 0;
+	}
+	section#footer div.wrapper div.top>ul>li:first-child{
+		margin-left: 40px;
+	}
+	section#footer div.wrapper div.top>ul>li{
+		width: 200px;
+	}
+	section#footer div.wrapper div.top>ul li img{
+		max-width: 90px;
+	}
+	section#footer div.wrapper div.top>ul li p{
+		font-size: 15px;
+	}
+	section#footer div.wrapper div.top>ul li h4{
+		font-size: 20px;
+	}
+	section#footer div.wrapper div.top>ul li ul li{
+		font-size: 14px;
+	}
+	section#footer div.wrapper div.top>ul li form input{
+		font-size: 14px;
+	}
+	section#footer div.wrapper div.top>ul{
+		justify-content: center;
+	}
+	section#footer div.wrapper div.top>ul>li:last-child{
+		width: 300px;
+	}
+	section#footer div.wrapper div.bottom{
+		margin-top: 40px;
+	}
+	section#download {
+	background-size: cover;
+	padding-top: 60px;
+	}
+	section#footer div.wrapper div.bottom ul li span{
+		font-size: 12px;
+	}
+	section#footer div.wrapper div.bottom ul li img{
+		width: 15px;
+	}
+	section#download div.wrapper div.container h2{
+		font-size: 40px;
+		max-width: 300px;
+	}
+	section#download div.wrapper div.container p{
+		margin-top: 25px;
+		max-width: 400px;
+		font-size: 14px;
+	}
+	section#download div.wrapper div.container a.button{
+		max-width: 125px;
+		padding: 9px 0;
+		font-size: 13px;
+		margin-top: 20px;
+	}
+}
+@media all and (max-width: 640px){
+	section#services div.wrapper h3{
+		font-size: 36px;
+	}
+	section#middle div.wrapper ul {
+		flex-wrap: wrap;
+	}
+	section#middle div.wrapper ul li{
+		margin: 0;
+		width: 50%;
+		text-align: center;
+	}
+	section#middle div.wrapper ul li:nth-child(odd){
+		margin-top: 0px;
+	}
+	section#middle div.wrapper ul li a img{
+		width: 80%;
+		padding: 10px;
+	}
+	section#middle div.wrapper hr.line:first-child{
+		margin-bottom: 60px;
+	}
+	section#middle div.wrapper h4{
+		margin-top: 60px;
+	}
+	section#testimonial div.wrapper div.container{
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+	section#faq div.wrapper div.container ul li{
+		padding: 25px 0px 10px;
+	}
+	section#press div.wrapper{
+		flex-direction: column;
+	}
+	section#press div.wrapper div.right ul{
+		margin-top: 20px;
+	}
+	section#press div.wrapper div.right ul li{
+		width: 40%;
+		padding: 10px 0;
+	}
+	section#press div.wrapper div.right ul li img{
+		width: 100px;
+	}
+	section#press{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	section#footer div.wrapper div.top>ul>li:first-child{
+		margin-left: 15px;
+	}
+	section#footer div.wrapper div.top>ul{
+		align-items: center;
+		flex-direction: column;
+	}
+	section#promo{
+		padding: 60px 0;
+	}
+	section#download div.wrapper{
+		justify-content: center;
+	}
+	section#user-count{
+		padding-top: 60px;
+		padding-bottom: 50px;
+	}
+	section#faq{
+		padding-top: 60px;
+	}
+	section#footer{
+		padding-top: 60px;
+	}
+}
+@media all and (max-width: 480px){
+	section#spotlight div.wrapper div.container h1{
+		font-size: 32px;
+	}
+	section#spotlight div.wrapper div.container p{
+		font-size: 12px;
+	}
+	section#spotlight div.wrapper div.container{
+		margin-top: 0;
+	}
+	section#spotlight div.wrapper div.container p{
+		margin-bottom: 30px;
+	}
+	section#spotlight div.wrapper div.container a.button{
+		font-size: 12px;
+		padding: 10px 17px;
+	}
+	section#spotlight div.wrapper div.container div.experia{
+		font-size: 12px;
+	}
+	section#spotlight div.wrapper div.container div.experia span{
+		font-size: 12px;
+	}
+	section#spotlight div.wrapper div.container div.experia img{
+		width: 70px;
+	}
+	section#services div.wrapper span.arrow{
+		margin-top: 0px;
+	}
+	section#services div.wrapper div#service-top h6{
+		font-size: 12px;
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+	section#services div.wrapper h3{
+		font-size: 30px;
+	}
+	section#services div.wrapper div.container{
+		margin-top: 45px;
+	}
+	section#services div.wrapper div.container ul li span{
+		font-size: 12px;
+	}
+	section#services div.wrapper div.container ul li h6{
+		font-size: 16px;
+	}
+	section#services div.wrapper div.container ul li p {
+		font-size: 12px;
+	}
+	section#middle div.wrapper h4 {
+		margin-top: 30px;
+		font-size: 30px;
+	}
+	section#middle div.wrapper p{
+		font-size: 12px;
+	}
+	section#testimonial div.wrapper div.container p {
+		font-size: 18px;
+	}
+	section#faq div.wrapper div.top ul{
+		flex-wrap: wrap;
+	}
+	section#faq div.wrapper div.top ul li{
+		width: 100vw;
+	}
+	section#faq div.wrapper div.top ul li a{
+		padding-bottom: 10px;
+		margin-top: 10px;
+	}
+	section#faq div.wrapper div.container{
+		margin-top: 10px;
+	}
+	section#faq div.wrapper div.container ul li {
+		width: 100%;
+	}
+	section#faq div.wrapper div.container ul li h6{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	section#faq div.wrapper div.container ul li p{
+		font-size: 12px;
+	}
+	section#faq div.wrapper div.bottom div.image-container{
+		display: none;
+	}
+	section#faq div.wrapper div.bottom div.content{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 75%;
+		margin: 0 auto;
+	}
+	section#faq div.wrapper div.bottom{
+		padding-top: 20px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item{
+		margin-bottom: 10px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item img{
+		margin-bottom: 5px;
+	}
+	section#press div.wrapper div.right ul li img{
+		width: 70px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item a{
+		font-size: 12px;
+	}
+	section#faq div.wrapper div.bottom div.content div.item p{
+		font-size: 12px;
+	}
+	section#promo{
+		padding: 30px 0;
+	}
+	section#promo div.wrapper div.top h4{
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	section#promo div.wrapper div.top a.button{
+		font-size: 12px;
+		width: 75px;
+	}
+	section#promo div.wrapper div.bottom ul li {
+		width: 100%;
+	}
+	section#promo div.wrapper div.bottom{
+		margin-top: 40px;
+	}
+	section#promo div.wrapper div.bottom ul li span{
+		font-size: 12px;
+	}
+	section#footer div.wrapper div.top>ul>li:first-child{
+		margin: 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	section#footer div.wrapper div.top>ul>li{
+		margin-bottom: 30px;
+	}
+	section#footer div.wrapper div.top>ul li h4{
+		margin-bottom: 10px;
+	}
+	section#footer div.wrapper div.top>ul li ul li {
+		font-size: 12px;
+	}
+	section#footer div.wrapper div.top>ul li h4{
+		font-size: 16px;
+	}
+	section#footer div.wrapper div.top>ul li{
+		text-align: center;
+	}
+	section#footer div.wrapper div.top>ul>li>ul>li{
+		text-align: center;
+		width: 100%;
+	}
+	section#footer{
+		padding-top: 40px;
+	}
+	section#footer div.wrapper div.top>ul>li:first-child{
+		margin-bottom: 30px;
+
+	}
+	section#footer div.wrapper div.top>ul li img{
+		margin-bottom: 10px;
+	}
+	section#footer div.wrapper div.top>ul>li:last-child{
+		width: 100%;
+	}
+	section#footer div.wrapper div.top>ul li form input{
+		margin-top: 10px;
+	}
+	section#footer div.wrapper div.top>ul li form img{
+		top: 25px;
+	}
+	section#footer div.wrapper div.bottom ul{
+		flex-wrap: wrap;
+	}
+	section#footer div.wrapper div.bottom ul li{
+		margin-bottom: 10px;
+	}
+	section#mask{
+		display: none;
+	}
+	section#download{
+		display: none;
+	}
+}	
